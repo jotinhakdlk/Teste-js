@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Penguin</title>
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    text-align: center;
+    background-image: url(img/fundoclubpenguin.jpg);
+    background-size: 215vh 115vh;
+    background-repeat: no-repeat;
+}
+
+#penguin{
+    height: 40vh;
+}
+
+h1{
+    font-size: 15vh;
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    -webkit-text-stroke-width: 0.5vh;
+    -webkit-text-stroke-color: black;
+}
+
+button{
+    padding: 5vh 10vh;
+    background-color: aliceblue;
+}
+
+p{
+    font-family: 'Dynapuff';
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-size: 6vh;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+}
+    </style>
+</head>
+<body>
+    <h1>Cuidado!</h1>
+    <p><strong>Você foi desafiado a não se impressionar!</strong></p>
+    <p>Você aceita o desafio?😎</p>
+    <div class="grid">
+        <div></div>
+        <div>
+        <button onclick="document.getElementById('penguin').src='img/clubpenguindancando.gif'">Sim</button>
+        <button onclick="document.getElementById('penguin').src='img/clubpenguinparado.png'">Não</button>
+        </div>
+        <div>
+        <img id="penguin" src="img/clubpenguinparado.png" alt="Club penguin azul parado">
+    </div>
+    <div></div>
+</body>
+</html>
